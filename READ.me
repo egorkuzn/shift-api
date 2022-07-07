@@ -1,24 +1,22 @@
 **API DESCRIPTION**
 
-email: misha@mail.ru
-password: 12345
-->
+1st: Authorization of user
+
 /login
-GET: Security -return-> User
-POST: {Secutiry, User} -> tempId
-PUT: {tempId , code} -> id // ТОЛЬКО ПОСЛЕ ЭТОГО В БАЗУ
-DELETE: {id}
+GET: {Security} -> User //that's for taking info about user from id
+POST: {Secutiry, User} -> tempId //Template id needs for server to keep new added persons
+PUT: {tempId , code} -> id // This is id which we use for working with server
+DELETE: {id} -> status
 
 /feed
-GET:{id} -> 
+GET:{id} -> feedInfo // For taking feed
 
 /me
-GET: {id, type} -> returnType
-//type : rent/like/own
-PUT: {id, idCard, type}
-
+GET: {id, type} -> returnIds // We take ids of cards by user id and cards' type.
+//types would be strings ONLY from that range: "own", "liked", "rent"
+PUT: {id, idCard, type} -> status
 
 /cards
-GET: {id, cardID} -> renturnCard
-POST: card{} -> status
-PUT: {cardID, what, onWhat} // Ecample: {}
+GET: {id, cardID} -> Card // Taking Card.json by its id
+POST: Card -> status // Adding of card
+PUT: {cardID, what, onWhat} -> status // Changing of card's parametr

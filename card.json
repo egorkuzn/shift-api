@@ -1,0 +1,44 @@
+card{
+    id:"",
+    image:"",
+    description:"",
+    price:"",
+    ownerID:"",
+    isRent:"",
+    customerID:""
+    term:"",
+    category:""
+    } 
+    Liked[
+    ...
+    userID{
+           cards[
+           ....
+           ]
+    },
+    ...
+    ]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

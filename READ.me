@@ -1,0 +1,24 @@
+**API DESCRIPTION**
+
+email: misha@mail.ru
+password: 12345
+->
+/login
+GET: Security -return-> User
+POST: {Secutiry, User} -> tempId
+PUT: {tempId , code} -> id // ТОЛЬКО ПОСЛЕ ЭТОГО В БАЗУ
+DELETE: {id}
+
+/feed
+GET:{id} -> 
+
+/me
+GET: {id, type} -> returnType
+//type : rent/like/own
+PUT: {id, idCard, type}
+
+
+/cards
+GET: {id, cardID} -> renturnCard
+POST: card{} -> status
+PUT: {cardID, what, onWhat} // Ecample: {}

@@ -1,0 +1,19 @@
+Security{
+id:"",
+password:"",
+email:""
+} (изменено)
+[13:01]
+User{
+id:"",
+name:"",
+surname:""
+email:"",
+phone:"",
+
+cards[
+...
+id:"",
+....
+]
+}

@@ -1,0 +1,13 @@
+User{
+  id:"",
+  name:"",
+  surname:""
+  email:"",
+  phone:"",
+
+  cards[
+  ...
+  id:"",
+  ....
+  ]
+}

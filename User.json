@@ -1,10 +1,11 @@
 User{
-  id:"",
+  //After authorization device or sth should keep id
+  id:"", 
   name:"",
   surname:""
   email:"",
   phone:"",
-
+  //There we would have cards id
   cards[
   ...
   id:"",

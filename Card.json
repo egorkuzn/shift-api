@@ -8,17 +8,8 @@ card{
     customerID:""
     term:"",
     category:""
-    } 
-    Liked[
-    ...
-    userID{
-           cards[
-           ....
-           ]
-    },
-    ...
-    ]
-}
+} 
+    
 
 
 

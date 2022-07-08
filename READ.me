@@ -4,22 +4,22 @@
 
 /login
 GET: {Security} -> User //that's for taking info about user from id
-POST: {Secutiry, User} -> tempId //Template id needs for server to keep new added persons
-PUT: {tempId , code} -> id // This is id which we use for working with server
-DELETE: {id} -> status
+POST: {Secutiry, User} -> tempID //Template id needs for server to keep new added persons
+PUT: {tempID , code} -> id // This is id which we use for working with server
+DELETE: {userID} -> status
 
 /feed
-GET:{id} -> feedInfo // For taking feed
+GET: {} -> feedInfo // For taking feed
 
 /me/cards
-GET: {userId, type} -> returnIds // We take ids of cards by user id and cards' type.
+GET: {userID, type} -> returnIds // We take ids of cards by user id and cards' type.
 //types would be strings ONLY from that range: "own", "liked", "rent"
-POST: Card -> status // Adding of card
-PUT: {cardID, what, onWhat} -> status // Changing of card's parametr
+POST: {userID, Card} -> status // Adding of card
+PUT: {userID, cardID, what, onWhat} -> status // Changing of card's parametr
 
 /me/settings
-GET: {stringParam} -> param // Taking param info
-PUT: {whatToChange, param} -> status // Changing users params
+GET: {userID, param} -> param // Taking param info
+PUT: {userID, whatToChange, param} -> status // Changing users params
 
 /cards
-GET: {id, cardID} -> Card // Taking Card.json by its id
+GET: {cardID} -> Card // Taking Card.json by its id

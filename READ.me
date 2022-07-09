@@ -3,16 +3,47 @@
 1st: Authorization of user
 
 /login
-GET: {Security} -> User //that's for taking info about user from id
-POST: {Secutiry, User} -> tempID //Template id needs for server to keep new added persons
-PUT: {tempID , code} -> id // This is id which we use for working with server
-DELETE: {userID} -> status
+GET:       |PUT:       |POST:     
+input:     |input:     |input:
+{          |{          |{
+  password,|  password,|  tempID,
+  email    |  email,   |  emailCode
+}          |  name,    |}
+           |  surname, |
+output:    |  phone    |output:
+{          |}          |{
+ userID    |           |  userID
+}          |output:    |}
+           |{          |
+           |  tempID,  |
+           |}          |
+           
 
 /feed
-GET: {} -> feedInfo // For taking feed
+GET:
+input:
+{}
+output:
+{
+  нужно согласовать
+}
 
 /cards/{username}
-GET: {userID, type} -> returnIds // We take ids of cards by user id and cards' type.
+GET:     |POST:         |
+input:   |input:        |
+{        |{             |
+  userID,|  userID,     |
+  type   |  imageURL,   |
+}        |  description,|
+output:  |  price,      |
+{        |  term,       |
+  imgIDs |  category    |
+}        | }            |
+         | output:      |
+         |{
+         |  true,
+         |}
+// We take ids of cards by user id and cards' type.
 //types would be strings ONLY from that range: "own", "liked", "rent"
 POST: {userID, Card} -> status // Adding of card
 PUT: {userID, cardID, what, onWhat} -> status // Changing of card's parametr

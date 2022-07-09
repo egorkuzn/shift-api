@@ -29,14 +29,14 @@ output:
 }
 
 /cards/{username}
-GET:     |POST:         |
-input:   |input:        |
-{        |{             |
-  userID,|  userID,     |
-  type   |  imageURL,   |
-}        |  description,|
-output:  |  price,      |
-{        |  term,       |
+GET:     |POST:         |PUT:
+input:   |input:        |input:
+{        |{             |{
+  userID,|  userID,     | userID,
+  type   |  imageURL,   | cardID,
+}        |  description,| what,
+output:  |  price,      | onWhat
+{        |  term,       |}
   imgIDs |  category    |
 }        | }            |
          | output:      |

@@ -82,7 +82,7 @@ output:
   price,
   ownerID,
   rentStatus,
-  castomerID,
+  customerID,
   term,
   category
 }

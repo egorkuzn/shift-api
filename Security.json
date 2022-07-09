@@ -1,8 +1,0 @@
-//This version more differ than what in discord was
-//I'm totally sure that we don't need id there
-
-Security{
-  password:"",
-  email:""
-}
-

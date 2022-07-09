@@ -12,13 +12,13 @@ DELETE: {userID} -> status
 /feed
 GET: {} -> feedInfo // For taking feed
 
-/user/{username}/cards
+/cards/{username}
 GET: {userID, type} -> returnIds // We take ids of cards by user id and cards' type.
 //types would be strings ONLY from that range: "own", "liked", "rent"
 POST: {userID, Card} -> status // Adding of card
 PUT: {userID, cardID, what, onWhat} -> status // Changing of card's parametr
 
-/user/{username}/settings
+/user/{username}
 GET: {userID, param} -> param // Taking param info
 PUT: {userID, whatToChange, param} -> status // Changing users params
 

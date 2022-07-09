@@ -2,7 +2,8 @@
 
 1st: Authorization of user
 
-/login
+>/login
+```
 GET:       |PUT:       |POST:     
 input:     |input:     |input:
 {          |{          |{
@@ -18,8 +19,9 @@ output:    |  phone    |output:
            |  tempID,  |
            |}          |
            
-
-/feed
+```
+>/feed
+```
 GET:
 input:
 {}
@@ -27,8 +29,10 @@ output:
 {
   нужно согласовать
 }
+```
 
-/cards/{username}
+>/cards/{username}
+```
 GET:     |POST:         |PUT:
 input:   |input:        |input:
 {        |{             |{
@@ -37,16 +41,15 @@ input:   |input:        |input:
 }        |  description,| what,
 output:  |  price,      | onWhat
 {        |  term,       |}
-  imgIDs |  category    |
-}        | }            |
-         | output:      |
-         |{
-         |  true,
-         |}
+  imgIDs |  category    |output:
+}        | }            |{
+         |output:       | true
+         |{             |}
+         |  true        |
+         |}             |
+```
 // We take ids of cards by user id and cards' type.
 //types would be strings ONLY from that range: "own", "liked", "rent"
-POST: {userID, Card} -> status // Adding of card
-PUT: {userID, cardID, what, onWhat} -> status // Changing of card's parametr
 
 /user/{username}
 GET: {userID, param} -> param // Taking param info

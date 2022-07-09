@@ -8,18 +8,20 @@ POST: {Secutiry, User} -> tempID //Template id needs for server to keep new adde
 PUT: {tempID , code} -> id // This is id which we use for working with server
 DELETE: {userID} -> status
 
+*Artem
 /feed
 GET: {} -> feedInfo // For taking feed
 
-/me/cards
+/user/{username}/cards
 GET: {userID, type} -> returnIds // We take ids of cards by user id and cards' type.
 //types would be strings ONLY from that range: "own", "liked", "rent"
 POST: {userID, Card} -> status // Adding of card
 PUT: {userID, cardID, what, onWhat} -> status // Changing of card's parametr
 
-/me/settings
+/user/{username}/settings
 GET: {userID, param} -> param // Taking param info
 PUT: {userID, whatToChange, param} -> status // Changing users params
 
+*Artem
 /cards
 GET: {cardID} -> Card // Taking Card.json by its id

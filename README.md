@@ -1,6 +1,6 @@
 **API DESCRIPTION**
 
-1st: Authorization of user
+*Авторизация/Регистрация*
 
 >/login
 ```
@@ -20,6 +20,8 @@ output:    |  phone    |output:
            |}          |
            
 ```
+*Лента*
+
 >/feed
 ```
 GET:
@@ -30,6 +32,7 @@ output:
   нужно согласовать
 }
 ```
+*Карточки пользователя*
 
 >/cards/{username}
 ```
@@ -48,12 +51,44 @@ output:  |  price,      | onWhat
          |  true        |
          |}             |
 ```
-// We take ids of cards by user id and cards' type.
-//types would be strings ONLY from that range: "own", "liked", "rent"
+*Редактирование/Получение информации пользователя*
+>/user/{username}
+```
+GET:         |POST:
+input:       |input:
+{            |{
+  userID,    |  userID,
+  paramName  |  whatChange,
+}            |  onWhatChange
+output:      |}
+{            |output:
+  paramValue |{
+}            |  true
+             |}             
+```
+*База всех объявлений*
+>/cards
+```
+GET:
+input:
+{
+  cardID,
+}
+output:
+{
+  cardID,
+  imageURL,
+  description,
+  price,
+  ownerID,
+  rentStatus,
+  castomerID,
+  term,
+  category
+}
+```
 
-/user/{username}
-GET: {userID, param} -> param // Taking param info
-PUT: {userID, whatToChange, param} -> status // Changing users params
 
-/cards
-GET: {cardID} -> Card // Taking Card.json by its id
+
+
+

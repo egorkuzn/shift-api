@@ -33,8 +33,8 @@ output:
 ```
 *Карточки пользователя*
 
->/me/{variable} 
-{variable} - подстрока, которая может быть
+>/me/{variable}
+>>{variable} - подстрока, которая может быть
 - liked
 - own
 - rent

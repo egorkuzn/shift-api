@@ -54,7 +54,7 @@ output:  |  price,      | onWhat
 *Редактирование/Получение информации пользователя*
 >/user/{username}
 ```
-GET:         |POST:
+POST:        |PUT:
 input:       |input:
 {            |{
   userID,    |  userID,

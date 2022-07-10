@@ -11,7 +11,8 @@ input:     |input:     |input:
   password |  password,|  emailCode
 }          |  name,    |}
            |  surname, |
-output:    |  phone    |output:
+output:    |  phone,   |
+           |  login    |output:
 {          |}          |{
  userID    |           |  userID
 }          |output:    |}

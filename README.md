@@ -50,22 +50,6 @@ output:  |  price,      | onWhat
          |  true        |
          |}             |
 ```
-*Редактирование/Получение информации пользователя*
->/me
-```
-POST:        |PUT:
-input:       |input:
-{            |
-  userID,    |{
-  paramName  |  userID,
-}            |  whatChange,
-             |  onWhatChange
-output:      |}
-{            |output:
-  paramValue |{
-}            |  true
-             |}             
-```
 *База всех объявлений*
 >/cards/{id}
 ```
@@ -82,6 +66,22 @@ output:
   term,
   category
 }
+```
+*Редактирование/Получение информации пользователя*
+>/me
+```
+POST:        |PUT:
+input:       |input:
+{            |
+  userID,    |{
+  paramName  |  userID,
+}            |  whatChange,
+             |  onWhatChange
+output:      |}
+{            |output:
+  paramValue |{
+}            |  true
+             |}             
 ```
 
 

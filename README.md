@@ -4,7 +4,7 @@
 
 >/login
 ```
-PATCH:     |POST:      |PUT:     
+POST:      |PUT:       |PATCH:     
 input:     |input:     |input:
 {          |{          |{
   email,   |  email,   |  tempID,
@@ -26,8 +26,6 @@ output:    |  phone,   |
 >/feed
 ```
 GET:
-input:
-{}
 output:
 {
   нужно согласовать
@@ -37,7 +35,7 @@ output:
 
 >/cards
 ```
-PATCH:   |POST:         |PUT:
+POST:    |PUT:          |PATCH:
 input:   |input:        |input:
 {        |{             |{
   userID,|  userID,     | userID,

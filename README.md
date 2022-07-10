@@ -7,8 +7,8 @@
 PATCH:     |PUT:       |POST:     
 input:     |input:     |input:
 {          |{          |{
-  password,|  password,|  tempID,
-  email    |  email,   |  emailCode
+  email,   |  email,   |  tempID,
+  password |  password,|  emailCode
 }          |  name,    |}
            |  surname, |
 output:    |  phone    |output:

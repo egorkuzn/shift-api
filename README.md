@@ -53,11 +53,12 @@ output:  |  price,      | onWhat
          |}             |
 ```
 *Редактирование/Получение информации пользователя*
->/user/{username}
+>/me
 ```
 POST:        |PUT:
 input:       |input:
-{            |{
+{            |
+  userID,    |{
   paramName  |  userID,
 }            |  whatChange,
              |  onWhatChange

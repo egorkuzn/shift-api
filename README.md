@@ -12,8 +12,8 @@ input:     |input:     |input:
 }          |  name,    |}
            |  surname, |
 output:    |  phone,   |
-           |  username |output:
-{          |}          |{
+           |}          |output:
+{          |           |{
  userID    |           |  userID
 }          |output:    |}
            |{          |
@@ -35,9 +35,9 @@ output:
 ```
 *Карточки пользователя*
 
->/cards/{username}
+>/cards
 ```
-GET:     |POST:         |PUT:
+PATCH:   |POST:         |PUT:
 input:   |input:        |input:
 {        |{             |{
   userID,|  userID,     | userID,
@@ -68,13 +68,9 @@ output:      |}
              |}             
 ```
 *База всех объявлений*
->/cards
+>/cards/{id}
 ```
 GET:
-input:
-{
-  cardID,
-}
 output:
 {
   cardID,

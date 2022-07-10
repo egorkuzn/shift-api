@@ -58,9 +58,9 @@ output:  |  price,      | onWhat
 POST:        |PUT:
 input:       |input:
 {            |{
-  userID,    |  userID,
-  paramName  |  whatChange,
-}            |  onWhatChange
+  paramName  |  userID,
+}            |  whatChange,
+             |  onWhatChange
 output:      |}
 {            |output:
   paramValue |{

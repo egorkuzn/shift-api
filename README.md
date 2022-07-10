@@ -12,7 +12,7 @@ input:     |input:     |input:
 }          |  name,    |}
            |  surname, |
 output:    |  phone,   |
-           |  login    |output:
+           |  username |output:
 {          |}          |{
  userID    |           |  userID
 }          |output:    |}

@@ -4,7 +4,7 @@
 
 >/login
 ```
-GET:       |PUT:       |POST:     
+PATCH:     |PUT:       |POST:     
 input:     |input:     |input:
 {          |{          |{
   password,|  password,|  tempID,

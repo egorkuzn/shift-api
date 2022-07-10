@@ -33,7 +33,11 @@ output:
 ```
 *Карточки пользователя*
 
->/cards
+>/me/{variable} 
+{variable} - подстрока, которая может быть
+- liked
+- own
+- rent
 ```
 POST:    |PUT:          |PATCH:
 input:   |input:        |input:
@@ -68,7 +72,7 @@ output:
 }
 ```
 *Редактирование/Получение информации пользователя*
->/me
+>/me/settings
 ```
 POST:        |PUT:
 input:       |input:

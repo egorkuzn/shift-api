@@ -52,8 +52,11 @@ output:  |  price,      | onWhat
          |  true        |
          |}             |
 ```
--rent
--liked
+<uw>
+<li>rent</li>
+<li>liked</li>
+</uw>
+
 ```
 POST:    |PUT:          |DELETE:
 input:   |input:        |input:

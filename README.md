@@ -40,9 +40,9 @@ output:
 POST:    |PUT:          |PATCH:
 input:   |input:        |input:
 {        |{             |{
-  userID,|  userID,     | userID,
-  type   |  imageURL,   | cardID,
-}        |  description,| what,
+  userID |  userID,     | userID,
+}        |  imageURL,   | cardID,
+         |  description,| what,
 output:  |  price,      | onWhat
 {        |  term,       |}
   imgIDs |  category    |output:
@@ -61,9 +61,9 @@ output:  |  price,      | onWhat
 POST:    |PUT:          |DELETE:
 input:   |input:        |input:
 {        |{             |{
-  userID,|  userID,     | userID,
-  type   |  cardID      | cardID,
-}        |}             |} 
+  userID |  userID,     | userID,
+}        |  cardID      | cardID,
+         |}             |} 
 output:  |              | 
 {        |              |
   imgIDs |              |output:

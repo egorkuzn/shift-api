@@ -21,16 +21,9 @@ output:    |  phone,   |
            |}          |
            
 ```
-*Лента*
 
->/feed
-```
-GET:
-output:
-{
-  нужно согласовать
-}
-```
+
+
 *Карточки пользователя*
 
 >/me/{variable}
@@ -92,6 +85,17 @@ output:
 ```
 *Редактирование/Получение информации пользователя*
 >/me/settings
+>> ***whatChange*** и ***paramName*** принимают:
+<uw>
+  <li>email</li>
+  <li>name</li>
+  <li>surname</li>
+  <li>phone</li>
+  <li>userIconURL</li>
+</uw>
+
+
+
 ```
 POST:        |PUT:
 input:       |input:
@@ -112,5 +116,6 @@ output:      |}
 >/messages
 
 
+*Лента*
 
-
+>/feed

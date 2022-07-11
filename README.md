@@ -35,9 +35,7 @@ output:
 
 >/me/{variable}
 >>{variable} - подстрока, которая может быть
-- liked
 - own
-- rent
 ```
 POST:    |PUT:          |PATCH:
 input:   |input:        |input:
@@ -49,6 +47,24 @@ output:  |  price,      | onWhat
 {        |  term,       |}
   imgIDs |  category    |output:
 }        | }            |{
+         |output:       | true
+         |{             |}
+         |  true        |
+         |}             |
+```
+-rent
+-liked
+```
+POST:    |PUT:          |DELETE:
+input:   |input:        |input:
+{        |{             |{
+  userID,|  userID,     | userID,
+  type   |  cardID      | cardID,
+}        |}             |} 
+output:  |              | 
+{        |              |
+  imgIDs |              |output:
+}        |              |{
          |output:       | true
          |{             |}
          |  true        |

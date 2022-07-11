@@ -83,6 +83,18 @@ output:
   category
 }
 ```
+
+*Выгрузка объявлений одной категории*
+>/cards/{category}
+```
+GET:
+output:
+{
+  imgIDs
+}
+```
+
+
 *Редактирование/Получение информации пользователя*
 >/me/settings
 >> ***whatChange*** и ***paramName*** принимают:

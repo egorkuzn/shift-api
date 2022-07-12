@@ -38,7 +38,7 @@ input:   |input:        |input:
          |  description,| what,
 output:  |  price,      | onWhat
 {        |  term,       |}
-  imgIDs |  category    |output:
+ cardsID |  category    |output:
 }        | }            |{
          |output:       | true
          |{             |}
@@ -119,8 +119,8 @@ input:       |input:
 output:      |}
 {            |output:
   paramValue |{
-}            |  true
-             |}             
+  Person     |  true
+}            |}             
 ```
 # ЖДУ ВАШИХ ПРЕДЛОЖЕНИЙ
 *Мессенджер*
@@ -131,3 +131,4 @@ output:      |}
 *Лента*
 
 >/feed
+\[от, до\]

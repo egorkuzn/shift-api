@@ -114,8 +114,8 @@ input:       |input:
 {            |
   userID,    |{
   paramName  |  userID,
-}            |  whatChange,
-             |  onWhatChange
+}            |  paramName,
+             |  paramValue
 output:      |}
 {            |output:
   paramValue |{
